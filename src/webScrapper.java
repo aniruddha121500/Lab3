@@ -4,7 +4,19 @@ import java.util.Scanner;
 
 public class webScrapper {
     public static void main(String[] args) {
-        System.out.println("Here");
+        String printer = new String();
+        String printer2 = new String();
+        String printer3 = new String();
+
+        printer = "http://erdani.com/tdpl/hamlet.txt";
+        printer2 = "https://www.bls.gov/tus/charts/chart9.txt";
+        printer3 = "http://tgftp.nws.noaa.gov/data/raw/fz/fzus53.klot.srf.lot.txt";
+
+//      System.out.print(urlToString(printer));
+//      System.out.print(urlToString(printer2));
+//      System.out.print(urlToString(printer3));
+
+
     }
 
     /**
