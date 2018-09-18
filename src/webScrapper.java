@@ -16,6 +16,7 @@ public class webScrapper {
 //      System.out.print(urlToString(printer2));
 //      System.out.print(urlToString(printer3));
 
+        System.out.print(wordCounter(urlToString(printer)));
 
     }
 
@@ -35,5 +36,16 @@ public class webScrapper {
         String contents = urlScanner.useDelimiter("\\A").next();
         urlScanner.close();
         return contents;
+    }
+
+    public static int wordCounter(final String str) {
+        int retInt = 0;
+        for(int i = 0; i < str.length() - 1; i++) {
+            if(" ".equals(str.charAt(i))) {
+                retInt ++;
+            }
+        }
+
+        return retInt;
     }
 }
